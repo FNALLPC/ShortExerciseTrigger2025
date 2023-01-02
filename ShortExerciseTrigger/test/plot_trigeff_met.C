@@ -37,7 +37,8 @@ void plot_trigeff_met (const TString& infile = "histos_METTrigAnalyzer.root") {
   h_met_eff->SetMarkerColor(kRed);
   
   h_met_eff->Draw("pe same");
-  
+  c_met->SaveAs("eff_HLT_PFMET170_MiniAOD.png");	
+  c_met->SaveAs("eff_HLT_PFMET170_MiniAOD.pdf");
  
   return;
 }
