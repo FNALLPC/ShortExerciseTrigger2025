@@ -1,8 +1,22 @@
-# Trigger Short Exercise 2021
-Trigger short exercise CMS DAS @ Fermilab LPC, January 2022
+# Trigger Short Exercise 2023
+Trigger short exercise CMS DAS @ Fermilab LPC (January 9-13, 2023)
 
 See DAS twiki for detailed instructions:
-https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2021TriggerExercise
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2023TriggerExercise
+
+## Setup the work area
+Set up the CMSSW environment and clone the repository from github for the trigger exercise:
+
+```    
+source /cvmfs/cms.cern.ch/cmsset_default.csh
+setenv SCRAM_ARCH slc7_amd64_gcc700
+cd nobackup/
+cmsrel CMSSW_10_6_18
+cd CMSSW_10_6_18/src
+cmsenv
+git clone https://github.com/elfontan/ShortExerciseTrigger2023.git
+scram b -j 4
+```
 
 ## Jupyter noteboooks
 
@@ -20,20 +34,7 @@ When you log into cmslpc, add a `-L` option to your ssh command:
 
     ssh -L localhost:8888:localhost:8888 <YOUR USERNAME>@cmslpc-sl7.fnal.gov
 
-Then you can make your area
-
-```    
-source /cvmfs/cms.cern.ch/cmsset_default.csh
-setenv SCRAM_ARCH slc7_amd64_gcc700
-cd nobackup/
-cmsrel CMSSW_10_6_25
-cd CMSSW_10_6_25/src
-cmsenv
-git clone https://github.com/ahenckel/ShortExerciseTrigger2021.git
-scram b -j 4
-```
-
-And start Jupyter with this command:
+Then you can make your area as detailed above and start Jupyter with this command:
 
     jupyter notebook --no-browser --port=8888 --ip 127.0.0.1
 
