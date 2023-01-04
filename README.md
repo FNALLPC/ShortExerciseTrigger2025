@@ -11,8 +11,8 @@ Set up the CMSSW environment and clone the repository from github for the trigge
 source /cvmfs/cms.cern.ch/cmsset_default.csh
 setenv SCRAM_ARCH slc7_amd64_gcc700
 cd nobackup/
-cmsrel CMSSW_10_6_18
-cd CMSSW_10_6_18/src
+cmsrel CMSSW_10_6_31_patch1
+cd CMSSW_10_6_31_patch1/src
 cmsenv
 git clone https://github.com/elfontan/ShortExerciseTrigger2023.git
 scram b -j 4
