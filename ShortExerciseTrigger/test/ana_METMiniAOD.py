@@ -19,7 +19,7 @@ process.maxEvents = cms.untracked.PSet(
 
 # Input source
 process.source = cms.Source("PoolSource",
-   fileNames = cms.untracked.vstring('/store/user/cmsdas/2023/short_exercises/Trigger/skim_pfmet100_SingleElectron_2016G_ReReco_87k.root'), # skimmed file on EOS at LPC
+   fileNames = cms.untracked.vstring('/store/user/cmsdas/2024/short_exercises/Trigger/skim_pfmet100_SingleElectron_2016G_ReReco_87k.root'), # skimmed file on EOS at LPC
 )
 
 
