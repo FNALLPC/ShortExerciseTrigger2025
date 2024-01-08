@@ -1,8 +1,8 @@
-# Trigger Short Exercise 2023
-Trigger short exercise CMS DAS @ Fermilab LPC (January 9-13, 2023)
+# Trigger Short Exercise 2024
+Trigger short exercise CMS DAS @ Fermilab LPC (January 8-12, 2024)
 
 See DAS twiki for detailed instructions:
-https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2023TriggerExercise
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024TriggerExercise
 
 ## Setup the work area
 Set up the CMSSW environment and clone the repository from github for the trigger exercise:
@@ -14,7 +14,7 @@ cd nobackup/
 cmsrel CMSSW_10_6_31_patch1
 cd CMSSW_10_6_31_patch1/src
 cmsenv
-git clone https://github.com/elfontan/ShortExerciseTrigger2023.git
+git clone https://github.com/ddiaz006/ShortExerciseTrigger2024.git
 scram b -j 4
 ```
 
