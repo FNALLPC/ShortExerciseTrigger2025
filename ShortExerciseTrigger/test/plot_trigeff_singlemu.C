@@ -36,6 +36,8 @@ void plot_trigeff_singlemu (const TString& infile = "histos_SingleMuTrigAnalyzer
   h_pt_eff->SetMarkerColor(kRed);
   
   h_pt_eff->Draw("pe same");
+  c_pt->SaveAs("HLT_IsoMu24_effpT.pdf");
+  c_pt->SaveAs("HLT_IsoMu24_effpT.png");
   
   // ---- efficiency vs eta
   
@@ -55,6 +57,8 @@ void plot_trigeff_singlemu (const TString& infile = "histos_SingleMuTrigAnalyzer
   h_eta_eff->SetMarkerColor(kRed);
   
   h_eta_eff->Draw("pe same");
+  c_eta->SaveAs("HLT_IsoMu24_effETA.pdf");
+  c_eta->SaveAs("HLT_IsoMu24_effETA.png");
 
   // ---- efficiency vs phi
   
@@ -74,6 +78,8 @@ void plot_trigeff_singlemu (const TString& infile = "histos_SingleMuTrigAnalyzer
   h_phi_eff->SetMarkerColor(kRed);
   
   h_phi_eff->Draw("pe same");
+  c_phi->SaveAs("HLT_IsoMu24_effPhi.pdf");
+  c_phi->SaveAs("HLT_IsoMu24_effPhi.png");
  
   return;
 }
